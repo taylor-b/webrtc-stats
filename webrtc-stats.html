@@ -88,6 +88,28 @@
         [[!WEBRTC]].
       </p>
     </section><!-- VS: getStats() remains in base spec! -->
+    <section>
+      <h2>Maintenance procedures for stats types</h2>
+      <p>This document, in its editors' draft form, serves as the repository
+        for the currenly defined set of stats types.
+      </p>
+      <p>
+        If a need for a new stats dictionary or dictionary member is found,
+        an issue should be raised against this spec on Github, and the W3C
+        consensus process will decide on whether the stat should be added
+        to the specification or not.
+      </p>
+      <p>
+        A pull request for a change to this document may serve as guidance
+        for the discussion, but the eventual merge is dependent on the usual
+        W3C consensus process.
+      </p>
+      <p>
+        Another specification that wishes to refer to a specific version
+        (for instance for conformance) should refer to a dated version;
+        these will be produced regularly when updates happen.
+      </p>
+    </section>
     <section id="rtctatstype-*">
       <h2>
         RTCStatsType
@@ -100,8 +122,8 @@
       <section id="rtcstatstype-str*">
         <h3>
           RTCStatsType DOMString
-        </h3><!-- 
-        As per discussions: Move enum to a string that is in a registry 
+        </h3><!--
+        As per discussions: Move enum to a string that is in a registry
         <div class="note">
           Updated the enum in [[!WEBRTC]]: to use lowercasenospacesordashes
           name convention, and added new enum values.
@@ -1537,7 +1559,7 @@ function logError(error) {
       </h3>
       <p>
         Some stats identifiers may expose personally identifiable information, for example the IP
-        addresses of the participating endpoints when a TURN relay is not used. 
+        addresses of the participating endpoints when a TURN relay is not used.
         <!-- TODO: add guidance on how to not expose this information? -->
       </p>
     </section>
